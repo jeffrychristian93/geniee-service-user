@@ -1,6 +1,6 @@
 package com.pji.genieeserviceuser.security;
 
-import com.pji.genieecommon.security.JsonWebTokenSecurityConfig;
+import com.pji.genieeserviceuser.auth.security.JsonWebTokenSecurityConfig;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
@@ -10,8 +10,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-@ComponentScan(basePackages = "com.pji.genieecommon.security")
-public class TriviaUserManagementWebSecurityConfig extends JsonWebTokenSecurityConfig {
+@ComponentScan(basePackages = "com.pji.genieeserviceuser.auth.security")
+public class GenieeUserManagementWebSecurityConfig extends JsonWebTokenSecurityConfig {
 
 	@Override
 	protected void setupAuthorization(HttpSecurity http) throws Exception {

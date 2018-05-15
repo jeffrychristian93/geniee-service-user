@@ -1,11 +1,11 @@
 package com.pji.genieeserviceuser.controller;
 
-import com.pji.genieecommon.jwt.AuthTokenDetailsDTO;
+import com.pji.genieeserviceuser.auth.jwt.AuthTokenDetailsDTO;
+import com.pji.genieeserviceuser.auth.jwt.JsonWebTokenUtility;
 import com.pji.genieeserviceuser.dto.*;
+import com.pji.genieeserviceuser.service.UserManagementService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.pji.genieecommon.jwt.JsonWebTokenUtility;
-import com.pji.genieeserviceuser.service.UserManagementService;
 
 import java.util.Calendar;
 import java.util.Collection;
