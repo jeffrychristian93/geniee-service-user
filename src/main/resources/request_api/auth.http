@@ -1,0 +1,20 @@
+# For a quick start check out our HTTP Requests collection (Tools|HTTP Client|Open HTTP Requests Collection).
+#
+# Following HTTP Request Live Templates are available:
+# * 'gtrp' and 'gtr' create a GET request with or without query parameters;
+# * 'ptr' and 'ptrp' create a POST request with a simple or parameter-like body;
+# * 'mptr' and 'fptr' create a POST request to submit a form with a text or file field (multipart/form-data);
+
+POST http://localhost:8081/authenticate
+Content-Type: application/json
+
+{
+    "email":"super@pji.com",
+    "password":"super"
+}
+
+### LOGOUT
+DELETE http://localhost:8081/exit
+Authorization: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI1IiwiZW1haWwiOiJzdXBlckBwamkuY29tIiwicm9sZXMiOlsiYWRtaW4iLCJtYW5hZ2VyIl0sImV4cCI6MTUyNjA0MDM3NH0.-tfxlxrCbrybKvPp6VIzy2j-_1qcwoy6Jm5oiDe5Z4sbKNHuIkatQu1U5VdKWhTPji6NSaO2P1EjZA8BDN6sfw
+
+###
