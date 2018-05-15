@@ -9,8 +9,8 @@ POST http://localhost:8081/authenticate
 Content-Type: application/json
 
 {
-    "email":"super@pji.com",
-    "password":"super"
+    "email":"jeffry@gmail.com",
+    "password":"jeffry"
 }
 
 ### LOGOUT
